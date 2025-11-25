@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Hero Academia - Synopsis</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Materialize CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="sypnosis.css">
+
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar-fixed">
+  <nav class="orange darken-4">
+    <div class="container">
+      <a href="index.html" class="brand-logo">
+        <img src="images/Site-logo.webp" alt="">
+      </a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+        <i class="material-icons">menu</i>
+      </a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">Quirks</a></li>
+        <li><a href="#">Story</a></li>
+        <li><a href="heroes.html">Heroes</a></li>
+        <li><a href="villains.html">Villains</a></li>
+      </ul>
+    </div>
+  </nav>
+  </div>
+
+  <ul class="sidenav" id="mobile-demo">
+        <li><a href="#">Quirks</a></li>
+        <li><a href="#">Story</a></li>
+        <li><a href="heroes.html">Heroes</a></li>
+        <li><a href="villains.html">Villains</a></li>
+  </ul>
+
+  <!-- Header with overlay -->
+   <section>
+  <header>
+    <div class="container">
+      <h1>My Hero Academia</h1>
+      <p>Discover the world of heroes, quirks, and rising champions!</p>
+    </div>
+  </header>
+  </section>
+
+  <!-- Synopsis content -->
+
+  <section class="container">
+    <div class="row">
+      <div class="col s12 m10">
+        <h4 class="left-align orange-text">Syspnosis</h4>
+      <p class="flow-text">
+        In a world where nearly everyone possesses superpowers known as "Quirks," society is dominated by heroes and villains. 
+      Izuku Midoriya, born without a Quirk, dreams of becoming a great hero like his idol All Might. After a fateful encounter, 
+      he inherits the legendary Quirk "One For All" and enrolls in U.A. High School, a prestigious academy training the next generation 
+      of heroes. Midoriya and his classmates face rigorous training, life-threatening challenges, and powerful villains while discovering 
+      what it truly means to be a hero.
+      </p>
+
+      <p class="flow-text">
+        The story blends action, comedy, and heartfelt moments as students navigate the line between personal growth and societal expectations, 
+      learning that heroism is not just about strength, but courage, compassion, and the will to protect others.
+      </div>
+      </p>
+    </div>
+  </section>
+
+
+    <!-- Hero card -->
+   <section class="container">
+  <div class="row">
+    <!-- Section title -->
+    <div class="col s12 m10">
+      <h4 class="left-align orange-text">Characters</h4>
+    </div>
+
+    <!-- First hero card -->
+    <div class="col s12 m6">
+      <div class="hero-card">
+        <a href="heroes.html" target="_blank" class="link-cover"></a>
+        <img src="images/thumb-1920-1386889.jpg" alt="Hero Image 1">
+        <div class="hero-text">
+          <h2>Heroes</h2>
+          <p>Discover the mighty heroes of this world and their incredible quirks.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Second hero card -->
+    <div class="col s12 m6">
+      <div class="hero-card">
+        <a href="villains.html" target="_blank" class="link-cover"></a>
+        <img src="images/thumb-1920-983533.jpg" alt="Hero Image 2">
+        <div class="hero-text">
+          <h2>Villains</h2>
+          <p>Explore the dark side, the villains that challenge our heroes at every turn.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+  
+
+  <!-- Materialize JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <script>
+    $(document).ready(function(){
+      $('.sidenav').sidenav();
+    });
+  </script>
+
+</body>
+</html>

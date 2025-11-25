@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Villains</title>
+
+  <!-- Materialize CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Custom CSS -->
+<link rel="stylesheet" href="heroes.css">
+
+ <!--font-->
+ <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+  body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background: 
+
+    url('images/3ae91ac9e1bad238ef0f28eb4b0499a3.jpg') no-repeat center center fixed;
+  background-size: cover;  /* makes it cover the whole page */
+}
+
+
+    .heroes-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 40px 20px;
+    }
+
+    .hero-card {
+      position: relative;
+      width: 400px;
+      height: 500px;
+      border-radius: 15px;
+      overflow: hidden;
+      color: #fff;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      transition: transform 0.5s ease, box-shadow 0.5s ease;
+      cursor: pointer;
+    }
+
+    .hero-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 12px 25px rgba(0,0,0,0.3);
+    }
+
+    .hero-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    /* Overlay for darkening effect */
+    .hero-card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.5);
+      z-index: 1;
+      transition: background 0.5s ease;
+    }
+
+    .hero-card:hover::before {
+      background: rgba(0,0,0,0.2);
+    }
+
+    /* Text overlay */
+    .hero-text {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      z-index: 2;
+    }
+
+    .hero-text h2 {
+      margin: 0;
+      font-size: 1.8rem;
+      text-transform: uppercase;
+    }
+
+    .hero-text p {
+      margin-top: 5px;
+      font-size: 1rem;
+      opacity: 0.9;
+    }
+
+    /* Full card clickable link */
+    .link-cover {
+      position: absolute;
+      inset: 0;
+      z-index: 3;
+    }
+
+    /* Background color variants (optional) */
+    .hero-card.villain1::before { background: rgba(174, 0, 255, 0.397); }
+    .hero-card.villain2::before { background: rgba(0, 0, 0, 0.226); }
+    .hero-card.villain3::before { background: rgba(255, 14, 14, 0.212); }
+    .hero-card.villain4::before { background: rgba(80, 10, 10, 0.281); }
+  </style>
+</head>
+<body>
+
+  <div class="navbar-fixed">
+  <nav class="orange darken-4">
+    <div class="container">
+      <a href="index.html" class="brand-logo">
+        <img src="images/Site-logo.webp" alt="">
+      </a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+        <i class="material-icons">menu</i>
+      </a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="heroes.html">Heroes</a></li>
+        <li><a href="#">Story</a></li>
+        <li><a href="#">Quirks</a></li>
+        <li><a href="sysnopsis.html">About</a></li>
+      </ul>
+    </div>
+  </nav>
+  </div>
+
+  <ul class="sidenav" id="mobile-demo">
+        <li><a href="villains.html">Villains</a></li>
+        <li><a href="#">Story</a></li>
+        <li><a href="#">Quirks</a></li>
+        <li><a href="sysnopsis.html">About</a></li>
+  </ul>
+
+  <h1 class="center-align title white-text" style="margin-top: 30px;">Villains</h1>
+
+  <section class="heroes-section">
+
+    <div class="hero-card villain1">
+    <a href="Shigaraki.html" target="_blank" class="link-cover"></a>
+    <img src="images/03bbc221e3aad1977feef453df75316d.jpg" alt="Villain 1">
+    <div class="hero-text">
+      <h2>Shigaraki</h2>
+      <p>Quirk: Decay</p>
+    </div>
+  </div>
+
+  <!-- Villain Card 2 -->
+  <div class="hero-card villain2">
+    <a href="AllforOne.html" target="_blank" class="link-cover"></a>
+    <img src="images/d49267c08def17f5757e54cdca10f2cb.jpg" alt="Villain 1">
+    <div class="hero-text">
+      <h2>All for One</h2>
+      <p>Quirk: All For One</p>
+    </div>
+  </div>
+
+
+  <!-- Villain Card 4 -->
+  <div class="hero-card villain4">
+    <a href="Overhaul.html" target="_blank" class="link-cover"></a>
+      <img src="images/ba75d1388e43f0725cdf9b20ffb86f23.jpg" alt="Kurogiri">
+        <div class="hero-text">
+          <h2>Kai Chisaki</h2>
+              <p>Quirk: Flesh Chimera</p>
+        </div>
+  </div>
+
+  
+
+</section>
+
+  <!-- Materialize JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <script>
+    $(document).ready(function(){
+      $('.sidenav').sidenav();
+    });
+  </script>
+
+</body>
+</html>

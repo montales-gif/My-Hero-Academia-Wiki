@@ -1,0 +1,51 @@
+@font-face {
+  font-family: "Orioonic";
+  src: url("fonts/Orioonic.woff2") format("woff2"),
+       url("fonts/Orioonic.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+header {
+  height: 100vh;
+  position: relative;
+}
+
+
+
+
+header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0);
+  width: 100%;
+  height: 100%;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  max-width: 35em;
+}
+
+section {
+  padding: 4em 0;
+}
+
+h2 {
+  margin-bottom: 1.5em;
+}
+
+@media screen and (max-width: 600px ){ 
+  header {
+    height: 100vh;
+  }
+}

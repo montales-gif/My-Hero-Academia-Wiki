@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todoroki - My Hero Academia</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+  <!-- Materialize CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Orbitron', sans-serif;
+      background: #111;
+      color: #fff;
+      margin: 0;
+    }
+
+    .bg-blur {
+  position: fixed;
+  inset: 0; /* top:0; left:0; right:0; bottom:0; */
+  background: url('images/6233d0e3f061de0c564dc36f2c7459db.jpg') no-repeat center center;
+  background-size: cover;
+  filter: blur(8px);  /* adjust the blur */
+  z-index: -1;         /* behind content */
+  }
+
+  
+
+    .hero-container {
+      display: flex;
+      flex-wrap: wrap;
+      min-height: 100vh;
+    }
+
+    .hero-image {
+      flex: 1 1 40%;
+      background: url('images/505a013fef22104f551aa03e0b90a44a.jpg') no-repeat center center;
+      background-size: cover;
+      min-height: 100vh;
+    }
+
+    .hero-content {
+      flex: 1 1 60%;
+      padding: 3em;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .hero-content h1 {
+      font-size: 4rem;
+        font-family: 'Anton', sans-serif;
+      margin-bottom: 1rem;
+      color: #ce6e00;
+    }
+
+    .hero-content h2 {
+      font-size: 2rem;
+      margin-top: 1em;
+      margin-bottom: 0.5em;
+      color: #f07625c9;
+    }
+
+    .hero-content p, .hero-content ul {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      margin-bottom: 1em;
+      color: rgb(0, 255, 234);
+    }
+
+    .hero-section {
+      background: rgba(0, 0, 0, 0.534); 
+      border-radius: 10px;                
+      padding: 1.5em;                      
+      margin-bottom: 1.5em;                
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2); 
+    }
+
+    /* Responsive: stack image above content on small screens */
+    @media screen and (max-width: 992px) {
+      .hero-container {
+        flex-direction: column;
+      }
+
+      .hero-image, .hero-content {
+        flex: 1 1 100%;
+      }
+
+      .hero-content {
+        padding: 2em 1em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="navbar-fixed">
+  <nav class="orange darken-4">
+    <div class="container">
+      <a href="index.html" class="brand-logo">
+        <img src="images/Site-logo.webp" alt="">
+      </a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+        <i class="material-icons">menu</i>
+      </a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="heroes.html">Heroes</a></li>
+        <li><a href="#">Story</a></li>
+        <li><a href="#">Quirks</a></li>
+        <li><a href="villains.html">Villains</a></li>
+      </ul>
+    </div>
+  </nav>
+  </div>
+
+  <ul class="sidenav" id="mobile-demo">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Story</a></li>
+        <li><a href="#">Quirks</a></li>
+        <li><a href="villains.html">Villains</a></li>
+  </ul>
+
+   <div class="bg-blur"></div>
+
+  <div class="hero-container">
+    <!-- Left side: Hero Image -->
+    <div class="hero-image"></div>
+
+    <!-- Right side: Hero Content -->
+    <div class="hero-content">
+  <h1>Todoroki</h1>
+
+  <div class="hero-section">
+    <h2>Description</h2>
+    <p>Shoto Todoroki is a student at U.A. High School, born with the powerful Quirk “Half-Cold Half-Hot.” He can generate ice from his right side and fire from his left. Calm and strategic, Todoroki strives to become a hero on his own terms while reconciling with his complicated family history.</p>
+  </div>
+
+  <div class="hero-section">
+    <h2>Abilities</h2>
+    <ul>
+      <li><strong>Ice Generation:</strong> Creates ice walls, slides, and freezes enemies.</li>
+      <li><strong>Fire Generation:</strong> Produces flames from his left side to attack or melt ice.</li>
+      <li><strong>Combat Versatility:</strong> Can combine ice and fire strategically in battle.</li>
+    </ul>
+  </div>
+
+  <div class="hero-section">
+    <h2>Fun Facts</h2>
+    <ul>
+      <li>Todoroki is the son of Endeavor, the number two Pro Hero.</li>
+      <li>He initially refuses to use his fire side because of his strained relationship with his father.</li>
+      <li>He is known for his calm demeanor and tactical approach during fights.</li>
+    </ul>
+  </div>
+</div>
+
+  <!-- Materialize JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <script>
+    $(document).ready(function(){
+      $('.sidenav').sidenav();
+    });
+  </script>
+
+</body>
+</html>

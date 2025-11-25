@@ -1,0 +1,93 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+      margin-top: 0;
+      padding-top: 0;
+      height: 50vh;
+      background: url('images/thumb-1920-971588.jpg') no-repeat center;
+      background-size: cover;
+      position: relative;
+}
+
+    header::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.5);
+    }
+
+    header .container {
+      position: relative;
+      z-index: 1;
+      color: white;
+      text-align: center;
+      padding-top: 15vh;
+    }
+
+    .synopsis-content {
+      
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .brand-logo img {
+      height: 50px;
+      width: auto;
+      margin: 10px;
+    }
+
+.hero-card {
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  height: 60vh;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+/* Background image fills the card */
+.hero-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Dark overlay */
+.hero-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  transition: background 0.5s ease;
+  z-index: 1;
+}
+
+/* Hover effect */
+.hero-card:hover::before {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.hero-card:hover {
+  transform: scale(1.02);
+}
+
+/* Text inside the card */
+.hero-text {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  padding: 0 15px;
+}
+
+/* Full-area clickable link */
+.link-cover {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+}

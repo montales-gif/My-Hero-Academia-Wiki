@@ -1,0 +1,15 @@
+@font-face {
+  font-family: "Orioonic";
+  src: url("fonts/Orioonic.woff2") format("woff2"),
+       url("fonts/Orioonic.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "Orioonic", sans-serif;
+}
+
+.title {
+    font-family: 'Orbitron', sans-serif;
+}
